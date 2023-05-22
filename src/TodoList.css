@@ -1,0 +1,19 @@
+ul {
+    width: 80%;
+    margin: auto;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:  var(--darkGray);
+    margin: 8px;
+    border-radius: 12px;
+}
+span {
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 48px;
+    font-weight: normal;
+}
+
+h1 span {
+    font-size: 28px;
+    font-weight: 500;
+}
+
