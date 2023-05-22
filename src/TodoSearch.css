@@ -1,7 +1,17 @@
-input {
-    border-radius:   12px 0 12px 0 ;
+.TodoSearch {
+    border-radius: 12px 0 12px 0;
     padding: 8px;
     text-align: center;
     margin-bottom: 24px;
+    font-size: 24px;
+    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.85);
 }
 
+.TodoSearch:focus {
+    outline-color: var(--dark-green);
+}
+
+.TodoSearch::placeholder {
+    color: #a5a5a5;
+    font-weight: 600;
+}

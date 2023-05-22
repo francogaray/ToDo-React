@@ -1,19 +1,13 @@
-ul {
-    width: 80%;
+.TodoList {
+    margin: 0;
+    padding: 0 0 56px 0;
     margin: auto;
+    width: 40%;
+    list-style-type: none;
 }
 
-ul li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color:  var(--darkGray);
-    margin: 8px;
-    border-radius: 12px;
-}
-span {
-    display: inline-block;
-    margin: 0 20px;
-    cursor: pointer;
+@media (width < 769px) {
+    .TodoList{
+        width: 80%;
+    }
 }
