@@ -7,14 +7,14 @@ function TodoItem(props) {
                 className={`Icon Icon-check ${
                     props.completed && "Icon-check--active"
                 }`}
-                onClick={() => console.log("Clic Check")}
+                onClick={props.onComplete}
             >
                 V
             </span>
             <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>{props.text}</p>
             <span
                 className={`Icon Icon-delete`}
-                onClick={() => console.log("Clic X")}
+                onClick={props.onDelete}
             >
                 X
             </span>
