@@ -1,0 +1,50 @@
+.loader{
+  background:
+      linear-gradient(0.25turn, transparent, #a8a8a8, transparent),
+      linear-gradient(#cacaca, #cacaca),
+      radial-gradient(38px circle at 19px 19px, #cacaca 50%, transparent 51%),
+      linear-gradient(#cacaca, #cacaca);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 315px 200px, 615px 130px, 100px 100px, 225px 30px;
+  background-position: -315px 0, 0 0, 15px 140px, 65px 145px;
+  animation: loading 1.1s infinite;
+}
+
+@keyframes loading {
+to {
+  background-position: 315px 0, 0 0, 15px 140px, 65px 145px;
+}
+}
+
+
+.TodosLoading {
+  background-color: var(--darkGray);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 50px rgba(134, 135, 136, 0.25);
+  margin: 24px 0;
+  border-radius: 12px;
+  height: 48px;
+}
+.loader .Icon-delete{
+  fill: #cacaca;
+  cursor: default;
+  background-color: #cacaca;
+}
+
+.loader .Icon-delete .Icon-svg {
+  border-radius: 50%;
+  fill: #a7a7a7;
+  cursor: default;
+
+
+}
+
+.loader .Icon-check svg{
+  color: #a7a7a7;
+  cursor: default;
+}
+

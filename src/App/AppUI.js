@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 import { TodoCounter } from "../TodoCounter";
 import { TodoSearch } from "../TodoSearch";
 import { TodoList } from "../TodoList";
 import { TodoItem } from "../TodoItem";
 import { CreateTodoButton } from "../CreateTodoButton";
+import { TodosLoading } from "../TodosLoading";
+import { TodosError } from "../TodosError";
+import { EmptyTodos } from "../EmptyTodos";
 
 function AppUI({
     completedTodos,
@@ -14,7 +17,7 @@ function AppUI({
     completeTodo,
     deleteTodo,
     loading,
-    error
+    error,
 }) {
     return (
         <>
@@ -24,16 +27,23 @@ function AppUI({
                 setSearchValue={setSearchValue}
             />
             <TodoList>
-                {loading && <p>Estamos cargando...</p>}
-                {error && <p>Hubo un error :{"("} </p>}
-                {(!loading && searchedTodos.length === 0 ) && <p>Crea tu primer TODO!</p> }
+                {loading && 
+                <>
+                <TodosLoading/>
+                <TodosLoading/>
+                <TodosLoading/>
+                </>}
+                {error && <TodosError/>}
+                {!loading && searchedTodos.length === 0 && (
+                    <EmptyTodos/>
+                )}
 
                 {searchedTodos.map((todo) => (
                     <TodoItem
                         key={todo.text}
                         text={todo.text}
                         completed={todo.completed}
-                        onComplete={ () => completeTodo(todo.text)}
+                        onComplete={() => completeTodo(todo.text)}
                         onDelete={() => deleteTodo(todo.text)}
                     />
                 ))}
@@ -44,4 +54,4 @@ function AppUI({
     );
 }
 
-export { AppUI}
+export { AppUI };
