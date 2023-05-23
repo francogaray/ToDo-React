@@ -1,0 +1,41 @@
+.Icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+}
+
+.Icon-check {
+    position: absolute;
+    left: 8px;
+    color: var(--gray);
+}
+
+.checked  {
+    color: var(--green);
+}
+.Icon-check:hover svg {
+    color: var(--green);
+}
+
+.Icon-delete {
+    position: absolute;
+    top: -18px;
+    right: 10px;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+}
+
+.Icon-svg{
+    width: 40px;
+    height: 40px;
+}
+.Icon-delete:hover .Icon-svg {
+    border-radius: 50%;
+    fill: red;
+
+}
