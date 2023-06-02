@@ -9,6 +9,7 @@ import { TodosError } from "../TodosError";
 import { EmptyTodos } from "../EmptyTodos";
 import { TodoContext } from "../TodoContext";
 import { Modal } from "../Modal"
+import { TodoForm } from "../TodoForm"
 
 function AppUI() {
     const { searchedTodos, completeTodo, deleteTodo, loading, error, openModal,setOpenModal } =
@@ -41,7 +42,7 @@ function AppUI() {
             <CreateTodoButton />
             {openModal && (
                 <Modal>
-                        La funcionalidad de agregar TODO
+                        <TodoForm/>
                 </Modal>
 
             )}
