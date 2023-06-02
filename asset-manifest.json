@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/francogaray/ToDo-React/static/css/main.8dc91875.css",
+    "main.js": "/francogaray/ToDo-React/static/js/main.cdf9236c.js",
+    "index.html": "/francogaray/ToDo-React/index.html",
+    "main.8dc91875.css.map": "/francogaray/ToDo-React/static/css/main.8dc91875.css.map",
+    "main.cdf9236c.js.map": "/francogaray/ToDo-React/static/js/main.cdf9236c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8dc91875.css",
+    "static/js/main.cdf9236c.js"
+  ]
+}
