@@ -9,7 +9,6 @@ function CreateTodoButton() {
         <button
             className="CreateTodoButton"
             onClick={() => {
-                console.log("Open Modal");
                 setOpenModal((state) => !state);
             }}
         >

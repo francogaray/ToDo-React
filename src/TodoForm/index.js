@@ -9,7 +9,6 @@ function TodoForm() {
         event.preventDefault();
         addTodo(newTodoValue);
         setOpenModal(false);
-        console.log("onSubmit");
     };
 
     const onCancel = () => {
